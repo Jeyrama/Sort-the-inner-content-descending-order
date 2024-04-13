@@ -21,3 +21,16 @@ function sortTheInnerContent(words){
 }
 
 // or
+
+function sortTheInnerContent(words) {
+  return words
+    .split(" ")
+    .map( word => {
+      let letters = word.split(""),
+          a = letters.shift(), 
+          b = letters.pop() || "",
+          order = letters.sort().reverse().join("") ||""
+      return a+order+b
+    })
+    .join(" ")
+}
