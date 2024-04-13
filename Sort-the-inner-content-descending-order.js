@@ -19,3 +19,5 @@ function sortTheInnerContent(words){
     return match.split('').sort().reverse().join('');
   });
 }
+
+// or
