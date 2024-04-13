@@ -13,3 +13,9 @@ The string will never be null and will never be empty.
 
 
 // Solution
+
+function sortTheInnerContent(words){
+  return words.replace(/\B\w+(?=\w)/g, function(match){
+    return match.split('').sort().reverse().join('');
+  });
+}
