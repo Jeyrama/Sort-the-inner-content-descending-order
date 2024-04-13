@@ -10,3 +10,6 @@ Some examples:
 Words are made up of lowercase letters.
 The string will never be null and will never be empty.
 */
+
+
+// Solution
